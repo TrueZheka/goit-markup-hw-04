@@ -373,16 +373,51 @@ a {
   margin-right: 0;
   margin-bottom: 50px;
 
-  font-weight: 700;
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+
 .clients-list {
   display: flex;
 }
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--first-text-color);
+  border-radius: 4px;
+}
+
+.clients-icon {
+  margin-left: 0;
+  margin-right: 0;
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus,
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--akcent-text-color);
+  border-color: var(--akcent-text-color);
+}
+
 /* -------Навигация для секции Портфолио------- */
 .portfolio-list {
   display: flex;
@@ -455,11 +490,25 @@ a {
 /*-------------  Footer-------------*/
 .footer {
   background-color: var(--second-text-color);
-}
-.footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer > .container {
+  display: flex;
+}
+
+.footer-left,
+.footer-right {
+  margin: 0;
+  align-self: baseline;
+}
+
+/* -------Левая секция футера------- */
+
+.footer-left {
+  margin-right: 70px;
+}
+
 .footer-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -468,14 +517,23 @@ a {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.footer-logo > .accent {
-  color: var(--akcent-text-color);
-}
-.footer-list {
-  font-style: normal;
 
+.footer-logo > .accent {
+  color: #2196f3;
+}
+
+.address {
   margin-top: 20px;
 }
+
+.footer-list {
+  font-style: normal;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-address,
 .footer-contacts-link {
   font-size: 14px;
@@ -483,12 +541,63 @@ a {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.footer-contacts-link {
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .footer-address:hover,
 .footer-address:focus,
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--akcent-text-color);
+}
+
+.footer-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* -------Правая секция футера------- */
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.right-list {
+  display: flex;
+}
+
+.right-item {
+  width: 44px;
+  height: 44px;
+}
+
+.right-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.right-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+}
+
+.right-icon {
+  margin-left: 0;
+  margin-right: 0;
+  fill: var(--second-text-color);
+}
+
+.right-link:hover,
+.right-link:focus {
+  background-color: var(--akcent-text-color);
 }
