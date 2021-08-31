@@ -340,6 +340,7 @@ a {
 /* -------Ссылки на соцсети------- */
 .team-socials-list {
   display: flex;
+
   width: 206px;
 }
 
