@@ -96,7 +96,7 @@ a {
   color: #000000;
 }
 .logo .accent {
-  color: #2196f3;
+  color: var(--akcent-text-color);
 }
 .header-list {
   display: flex;
@@ -374,7 +374,7 @@ a {
 
 .team-socials-link:hover,
 .team-socials-link:focus {
-  color: var(--second-text-color);
+  color: var(--white-text-color);
   background-color: var(--akcent-text-color);
 }
 .team-socials-link:hover .team-icon,
