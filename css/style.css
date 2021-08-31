@@ -105,9 +105,9 @@ a {
   margin-right: 50px;
 }
 
-.header-link,
-.header-contacts-link {
-  display: block;
+.header-link {
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -141,7 +141,19 @@ a {
   margin-right: 0;
   margin-left: auto;
 }
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-contacts-link {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--first-text-color);
 }
 .header-icon {
@@ -152,9 +164,7 @@ a {
 .header-contacts-link:focus {
   color: var(--akcent-text-color);
 }
-.header-contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
+
 /*---------GEROY----------------------*/
 .hero {
   text-align: center;
@@ -302,10 +312,13 @@ a {
   margin-right: 30px;
 }
 
+.team-image {
+  margin-bottom: 30px;
+}
+
 .team-item-content {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team-item-title {
@@ -329,7 +342,9 @@ a {
   display: flex;
   width: 206px;
 }
+
 .team-socials-item {
+  display: flex;
   width: 44px;
   height: 44px;
 }
@@ -346,7 +361,7 @@ a {
   align-items: center;
 
   border-radius: 50%;
-  color: var(--first-icon-color);
+  color: #afb1b8;
 }
 
 .team-icon {
