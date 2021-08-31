@@ -342,14 +342,14 @@ a {
 .team-item-text {
   color: var(--first-text-color);
   font-size: 16px;
+  margin-bottom: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 /* -------Ссылки на соцсети------- */
 .team-socials-list {
   display: flex;
-
-  width: 206px;
+  justify-content: center;
 }
 
 .team-socials-item {
@@ -385,6 +385,7 @@ a {
   color: var(--white-text-color);
   background-color: var(--akcent-text-color);
 }
+
 .team-socials-link:hover .team-icon,
 .team-socials-link:hover .team-icon {
   fill: currentColor;
