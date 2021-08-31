@@ -505,7 +505,7 @@ a {
 }
 /*-------------  Footer-------------*/
 .footer {
-  background-color: var(--second-text-color);
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -610,7 +610,7 @@ a {
 .right-icon {
   margin-left: 0;
   margin-right: 0;
-  fill: var(--second-text-color);
+  fill: var(--white-text-color);
 }
 
 .right-link:hover,
